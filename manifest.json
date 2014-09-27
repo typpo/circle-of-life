@@ -1,0 +1,21 @@
+{
+  "name": "The Circle of Life",
+  "version": "0.0.1",
+  "manifest_version": 2,
+  "description": "This extension was created by Emily.",
+  "homepage_url": "http://emilyian.com",
+  "icons": {
+    "16": "icons/icon16.png",
+    "48": "icons/icon48.png",
+    "128": "icons/icon128.png"
+  },
+  "default_locale": "en",
+  "background": {
+    "page": "src/bg/background.html",
+    "persistent": true
+  },
+  "options_page": "src/options/index.html",
+  "permissions": [
+    "tabs"
+  ]
+}
