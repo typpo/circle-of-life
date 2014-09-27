@@ -2,12 +2,12 @@
   "name": "The Circle of Life",
   "version": "0.0.1",
   "manifest_version": 2,
-  "description": "This extension was created by Emily.",
-  "homepage_url": "http://emilyian.com",
+  "description": "Improve your life - a must-have for all Lion King fans!",
+  "homepage_url": "http://ianww.com",
   "icons": {
-    "16": "icons/icon16.png",
-    "48": "icons/icon48.png",
-    "128": "icons/icon128.png"
+    "16": "icons/lion16.png",
+    "48": "icons/lion48.png",
+    "128": "icons/lion128.png"
   },
   "default_locale": "en",
   "background": {
