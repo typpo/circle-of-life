@@ -20,6 +20,13 @@ chrome.tabs.onUpdated.addListener( function (tabId, changeInfo, tab) {
 chrome.tabs.onRemoved.addListener( function (tabId, changeInfo, tab) {
   if (tabId === currentTabId) {
     var sound = document.getElementById('bgsound');
-    sound.pause();
+    // Wait a little if it hasn't been playing for long.
+    if (sound.currentTime < 2) {
+      setTimeout(function() {
+        sound.pause();
+      }, 1500);
+    } else {
+      sound.pause();
+    }
   }
 })
