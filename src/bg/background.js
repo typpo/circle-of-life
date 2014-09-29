@@ -10,9 +10,6 @@ chrome.tabs.onUpdated.addListener( function (tabId, changeInfo, tab) {
         sound.play();
         currentTabId = tabId;
       }
-    } else {
-      sound.pause();
-      currentTabId = -1;
     }
   }
 })
@@ -24,7 +21,7 @@ chrome.tabs.onRemoved.addListener( function (tabId, changeInfo, tab) {
     if (sound.currentTime < 2) {
       setTimeout(function() {
         sound.pause();
-      }, 1500);
+      }, 1600);
     } else {
       sound.pause();
     }
