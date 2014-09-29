@@ -9,7 +9,6 @@
     "48": "icons/lion48.png",
     "128": "icons/lion128.png"
   },
-  "default_locale": "en",
   "background": {
     "page": "src/bg/background.html",
     "persistent": true
