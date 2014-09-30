@@ -1,6 +1,6 @@
 var currentTabId = -1;
 
-chrome.tabs.onUpdated.addListener( function (tabId, changeInfo, tab) {
+chrome.tabs.onUpdated.addListener(function(tabId, changeInfo, tab) {
   if (tab.active) {
     var sound = document.getElementById('bgsound');
     if (changeInfo.status == 'complete') {
@@ -14,7 +14,7 @@ chrome.tabs.onUpdated.addListener( function (tabId, changeInfo, tab) {
   }
 })
 
-chrome.tabs.onRemoved.addListener( function (tabId, changeInfo, tab) {
+chrome.tabs.onRemoved.addListener(function(tabId, changeInfo, tab) {
   if (tabId === currentTabId) {
     var sound = document.getElementById('bgsound');
     // Wait a little if it hasn't been playing for long.
